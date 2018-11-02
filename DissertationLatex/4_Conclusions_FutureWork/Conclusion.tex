@@ -1,0 +1,17 @@
+\chapter{CONCLUSIONS AND POTENTIAL FUTURE WORK}
+
+\section{Discussion}
+
+By performing multiple experiments using both proteomics and metabolomics data sets, we showed that the proposed MSN approach consistently outperforms many of the commonly used normalization methods for the considered applications. We should note here that similar to our MSN, both Cyclic Loess and Contrast based methods are based on Loess Local regression. However, MSN has two main advantages. First, instead of fitting one global surface to all samples, MSN uses a local approach and adapts the surface fitting to each sample. Second, it integrates normalization, house-keeping detection, and robust surface fitting in an iterative process. Third, it invlolves the outlier detection method to reduce the effect of potential technical variation on normalization and biomarker discovery. Thus, it can recover from an initial bad scaling or inaccurate set of house-keeping molecules. 
+
+The proposed MSN approach assumes that the abundance levels of a certain number of molecules do not change between samples and controls (i.e. house-keeping molecules). In general, this requirement can be easily met in most proteomics and metabolomics studies. However, in extreme cases, the proposed MSN may not work if the entire proteome or metabolome is changed. In this case, any numerical normalization method will fail. The only alternative is to use internal standards, tissue weight, or cell numbers, depending on the experiment design. Another potential challenge is that the house-keeping molecules may have extremely skewed distribution in the retention time - m/z plane. In this case, the normalization factors will have large variation for the molecules located in sparse regions.
+
+
+
+\section{Conclusions}
+
+A new approach for normalizing proteomics and metabolomics data, entitled molecule specific normalization (MSN), was developed. MSN first identifies a group of molecules whose abundance levels were not affected by the biological treatment (i.e. house-keeping molecules). Then, it adopts a robust surface fitting strategy to minimize the molecular profile difference of the house-keeping molecules across samples. The normalization factor of each molecular peak is determined by its retention time and m/z within each sample. Using a metabolomics data set and a proteomics data set, we applied different degrees of noise on random samples and compared the performance of MSN to five other normalization methods. We showed that MSN is more robust to noise than any of the five other methods. This is due to the fact that MSN is based on a robust surface fitting approach and also treats the noise that is applied to each sample separately. We also showed that MSN has improved the classification performance by around 24\% on average of the different experiments with the metabolomics data and by around 5\% on average with the proteomics data. \\
+\indent A new approach for outlier detection was also introduced. This approach is based on the Fisher Criterion to detect data points that do not belong to the data distribution. A remarkable change in the criterion after removing one data point at a time indicates that the removed data point is an outlier.\\
+The performance of the classification has slightly ameliorated with 2\% improvement for classification using the two groups $G0$ and $G5$ and with 5\% improvement for classification using the two groups $G0$ and $G3$.
+
+

@@ -1,0 +1,27 @@
+\chapter*{CURRICULUM VITAE}
+\addcontentsline{toc}{part}{CURRICULUM VITAE}%\addtotoc{Curriculum Vitae}
+\begin{tabbing}
+{\bf NAME:} \hspace{5em} \= Fadoua Khmaissia\\\\
+{\bf ADDRESS:}  \> Computer Engineering \& Computer Science Department\\
+\> Speed School of Engineering \\
+\> University of Louisville \\
+\> Louisville, KY 40292
+\end{tabbing}
+\subsection*{EDUCATION:}
+\begin{description}
+\item \hspace{8.5em}\begin{tabular}{l}M.S., Computer Science \& Engineering \\
+May 2017\\
+\textbf{University of Louisville}, \emph{Louisville, Kentucky}\end{tabular}
+\item \hspace{8.5em}\begin{tabular}{l}B.Eng., Telecommunications Engineering\\
+June 2015\\
+\textbf{Higher School of Communications of Tunis},
+\emph{Tunis, Tunisia}\end{tabular}
+\end{description}
+
+\subsection*{HONORS AND AWARDS:}
+\begin{enumerate}
+  \item Golden Key International Honour Society Member, September 2016.
+  \item Higher School of Communications of Tunis Travel Award, June 2014.
+  \item Tunisian National Scholarship for Engineering Studies, September 2012.
+\end{enumerate}
+\cleardoublepage

@@ -1,0 +1,114 @@
+\documentclass[bottom=1in, 10pt]{LatexClass/ulthesis}
+
+
+\usepackage{epsfig}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{graphicx}
+\usepackage{amsthm}
+\usepackage{algorithm}
+\usepackage{algorithmic}
+\usepackage{fancybox}
+%\usepackage{subfigure}
+\usepackage{multirow}
+\usepackage{cite}
+\usepackage{perpage} %the perpage package
+\usepackage{subcaption}
+\usepackage{caption}
+\usepackage{slashbox}
+\MakePerPage{footnote} %the perpage package command
+\newtheorem{mydef}{Definition}
+
+% For not placing figures on pages by themselves and wasting space.
+\renewcommand{\topfraction}{0.85}
+\renewcommand{\textfraction}{0.1}
+\renewcommand{\floatpagefraction}{0.75}
+\renewcommand{\listalgorithmname}{LIST OF ALGORITHMS}
+
+\centerchapter
+
+\doublespace
+
+\phdthesis
+
+\begin{document}
+
+\include{0_frontmatter/TitlePage}
+
+
+%% For proposal
+\proposaltitlepage                   %% Generate the proposal title page.
+\thesiscopyright
+\clearpage\mbox{}
+\thispagestyle{empty}
+\addtocounter{page}{-1}
+\clearpage
+\thesissignaturepage    
+%% Following lines not needed for proposal
+%%\thesistitlepage                     %% Generate the dissertation title page.
+%%\thesissignaturepage                 %% Generate the signature page.
+
+%%
+%% This adds a "Page" subheading to the Table of Contents.
+%% Do not remove this line.
+%%
+
+
+
+
+%\include{0_frontmatter/Acknowledgments}
+\include{0_frontmatter/abstract}
+
+\tableofcontents
+
+\listoftables
+
+\listoffigures
+
+%\listofalgorithms
+%\addcontentsline{toc}{part}{LIST OF ALGORITHMS}
+
+\addtocontents{toc}{\protect \contentsline {part} {} {}}
+\addtocontents{toc}{\protect \contentsline {part} {CHAPTER} {Page}}
+
+\addtocontents{lof}{\protect \contentsline {part} {FIGURE} {Page}}
+\addtocontents{lot}{\protect \contentsline {part} {TABLE} {Page}}
+\addtocontents{loa}{\protect \contentsline {part} {ALGORITHM}{Page}}
+
+\renewcommand{\thefigure}{\thechapter.\arabic{figure}}
+\renewcommand{\thetable}{\thechapter.\arabic{table}}
+\renewcommand{\thealgorithm}{\thechapter.\arabic{algorithm}}
+\renewcommand\theequation{\thechapter.\arabic{equation}}
+\numberwithin{algorithm}{chapter}
+\numberwithin{equation}{chapter}
+\numberwithin{figure}{chapter}
+\numberwithin{table}{chapter}
+
+%% Start each new "Chapter" with the "\chapter{}" command
+%% Use "\label{}" to mark the chapter so that
+%% you may later refer to it with a line such as
+%% "... as discussed in Chapter~\ref{chap:intro} ..."
+
+\include{1_introduction/Introduction}
+\include{2_relatedWork/Background}
+%\include{3_proposedWork/CDSU}
+\include{3_proposedWork/main}
+%\include{3_proposedWork/CDSUcov}
+%\include{3_proposedWork/GCMMU}
+\include{5_Experiments/Experiments}
+\include{4_Conclusions_FutureWork/Conclusion}
+
+
+%\bibliographystyle{h-physrev}
+\begin{spacing}{0.9}
+\bibliographystyle{LatexClass/IEEEbib}
+%\renewcommand{\bibname}{References} % changes the header; default: Bibliography
+\bibliography{backmatter/proposalBib} % adjust this to fit your BibTex file
+\end{spacing}
+\singlespace
+
+\include{6_backmatter/Vita}
+
+
+\end{document}

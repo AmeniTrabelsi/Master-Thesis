@@ -1,0 +1,177 @@
+\begin{thebibliography}{10}
+
+\bibitem{lcms}
+Asara JM. Adamec J. Ouzzani M. Elmagarmid~AK. Zhang, X.,
+\newblock ``Data pre-processing in liquid chromatography-mass
+  spectrometry-based proteomics.,''
+\newblock {\em Bioinformatics}, vol. 21, no. 21, pp. 4054--9, 2005.
+
+\bibitem{lcms2}
+A.~Lommen,
+\newblock ``Metalign: Interface-driven, versatile metabolomics tool for
+  hyphenated full-scan mass spectrometry data preprocessing.,''
+\newblock {\em Analytical Chemistry}, vol. 81, pp. 3079?3086, 2009.
+
+\bibitem{specdeco}
+Shi X. Kim S. Patrick J.S. Binkley J. Kong M. McClain~C. Wei, X. and X.~Zhang,
+\newblock ``Data dependent peak model based spectrum deconvolution for analysis
+  of high resolution lc-ms data.,''
+\newblock {\em Analytical Chemistry}, vol. 86, pp. 2156?2165, 2014.
+
+\bibitem{xic}
+et~al. Aoshima, K.,
+\newblock ``A simple peak detection and label-free quantitation algorithm for
+  chromatography-mass spectrometry.,''
+\newblock {\em BMC Bioinformatics}, vol. 15, no. 1, pp. 376, 2014.
+
+\bibitem{clevland}
+W.~S. Clevland and S.~J. Devlin,
+\newblock ``Locally weighted regression: An approach to regression analysis by
+  local fitting,''
+\newblock {\em Journal of the American Statistical Association}, vol. 83, pp.
+  596--610, 1988.
+
+\bibitem{astrand:eke}
+M.~Astrand,
+\newblock ``Contrast normalization of oligonucleotide arrays,''
+\newblock {\em Journal of Computational Biology}, vol. 10, no. 1, pp. 95--102,
+  2003.
+
+\bibitem{outlier}
+A.~Patcha and J.-M. Park,
+\newblock ``An overview of anomaly detection techniques: Existing solutions and
+  latest technological trends.,''
+\newblock {\em Computer networks}, vol. 51, pp. 3448?3470, 2007.
+
+\bibitem{outlier2}
+V.~J. Hodge and J.~Austin,
+\newblock ``A survey of outlier detection methodologies.,''
+\newblock {\em Artificial intelligence review}, vol. 22, pp. 85--126, 2004.
+
+\bibitem{tukey}
+J.~W. Tukey,
+\newblock ``Exploratory data analysis,''
+\newblock {\em Addison-Wesley, Reading, MA}, 1977.
+
+\bibitem{grubbs}
+F.~Grubbs,
+\newblock ``Procedures for detecting outlying observations in samples,''
+\newblock {\em Technometrics}, vol. 11, no. 1, pp. 1--21, 1969.
+
+\bibitem{stefansky}
+W.~Stefansky,
+\newblock ``Rejecting outliers in factorial designs,''
+\newblock {\em Technometrics}, vol. 14, pp. 469--479, 1972.
+
+\bibitem{Rosner}
+B.~Rosner,
+\newblock ``Percentage points for a generalized esd many-outlier procedure,''
+\newblock {\em Technometrics}, vol. 25, no. 2, pp. 165--172, 1983.
+
+\bibitem{boris}
+I.~Boris and H.~D,
+\newblock ``Volume 16: How to detect and handle outliers,''
+\newblock {\em The ASQC Basic References in Quality Control: Statistical
+  Techniques. Edward F. Mykytka, Ph.D., Editor}, 1993.
+
+\bibitem{kimber}
+A.~C. Kimber,
+\newblock ``Tests for many outliers in an exponential sample,''
+\newblock {\em Applied Statistics}, vol. 31, pp. 263--271, 1982.
+
+\bibitem{kimber2}
+A.~C. Kimber,
+\newblock ``Exploratory data analysis for possibly censored data from skewed
+  distributions,''
+\newblock {\em Applied Statistics}, vol. 39, pp. 21--30, 1990.
+
+\bibitem{mve}
+Ferrie~F.P. Abou-Moustafa~K.T.,
+\newblock ``The minimum volume ellipsoid metric,''
+\newblock {\em In: Hamprecht F.A., Schnörr C., Jähne B. (eds) Pattern
+  Recognition. DAGM 2007. Lecture Notes in Computer Science}, vol. 4713, 2007.
+
+\bibitem{berg:tar}
+R.~A. Van Den~Berg,
+\newblock ``Centering, scaling, and transformations: improving the biological
+  information content of metabolomics data,''
+\newblock {\em BMC Genomics}, 2006.
+
+\bibitem{keller}
+Massart DL. Liang YZ. Kvalheim~OM. Keller, HR.,
+\newblock ``Evolving factor analysis in the presence of heteroscedastic
+  noise,''
+\newblock {\em Anal Chim Acta}, vol. 263, pp. 29--36, 2017.
+
+\bibitem{boxcox}
+R.~M. Sakia,
+\newblock ``The box-cox transformation technique: a review.,''
+\newblock {\em The Statistician}, vol. 41, pp. 169--178, 1992.
+
+\bibitem{bolstad:eke:2}
+Irizarry R. A. Astrand~M Bolstad, B.~M. and T.P. Speed,
+\newblock ``A comparison of normalization methods for high density
+  oligonucleotide array data based on variance and bias,''
+\newblock {\em Bioinformatics}, vol. 19, no. 2, pp. 185--193, 2003.
+
+\bibitem{dudoit2}
+Y.H. Callow~J.M. Dudoit, S.~Yang and T.P. Speed,
+\newblock ``Statistical methods for identifying expressed genes in replicated
+  cdna microarray experiments,''
+\newblock {\em Statistica Sinica}, vol. 12, pp. 111--139, 2002.
+
+\bibitem{dudoit}
+J.~Speed~P. Dudoit, S.~Fridlyand,
+\newblock ``Comparison of discrimination methods for classification of tumors
+  using gene expression data,''
+\newblock {\em J. Amer. Statist. Assoc}, vol. 97, pp. 77--87, 2002.
+
+\bibitem{ballman}
+Grill DE. Oberg~AL. Ballman, KV. and TM. Therneau,
+\newblock ``Faster cyclic loess: normalizing rna arrays via linear models,''
+\newblock {\em Bioinformatics}, vol. 20(16), pp. 2778--86, 2004.
+
+\bibitem{hochreiter}
+Clevert D. Obermayer~K. Hochreiter, S.,
+\newblock ``A new summarization method for affymetrix probe level data,''
+\newblock {\em Bioinformatics}, vol. 22, no. 8, pp. 943–949, 2006.
+
+\bibitem{li}
+B.~Li,
+\newblock ``Noreva: normalization and evaluation of ms-based metabolomics
+  data,''
+\newblock {\em Nucleic Acids Research}, vol. 45, no. Web Server issue W163,
+  2017.
+
+\bibitem{edwards}
+D.~Edwards,
+\newblock ``Non-linear normalization and background correction in one-channel
+  cdna microarray studies,''
+\newblock {\em Bioinformatics}, vol. 19, no. 7, pp. 825–833, 2003.
+
+\bibitem{fld}
+F.~Lopez-Ferreras E.~Alexandre-Cortizo, M. Rosa-Zurera,
+\newblock ``Application of fisher linear discriminant analysis to speech/music
+  classification.,''
+\newblock {\em EUROCON 2005-The International Conference on "Computer as a
+  Tool"}, 2005.
+
+\bibitem{christin}
+C.~Christin,
+\newblock ``A critical assessment of feature selection methods for biomarker
+  discovery in clinical proteomics.,''
+\newblock {\em Molecular and Cellular Proteomics}, 2013.
+
+\bibitem{metsign}
+X.~et.~al. Wei,
+\newblock ``Metsign: A computational platform for high-resolution mass
+  spectrometry-based metabolomics.,''
+\newblock {\em Analytical Chemistry}, vol. 83, pp. 7668--7675, 2011.
+
+\bibitem{ali}
+Frigui H. Zhang-X. Wei X.-Shi~B. Shahrjooihaghighi, A. and A.~Trabelsi,
+\newblock ``An ensemble feature selection method for biomarker discovery,''
+\newblock {\em Signal Processing and Information Technology (ISSPIT), 2017 IEEE
+  International Symposium on}, 2017.
+
+\end{thebibliography}

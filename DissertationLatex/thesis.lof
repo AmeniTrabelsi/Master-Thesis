@@ -1,0 +1,16 @@
+\contentsline {part} {FIGURE} {Page}
+\contentsline {figure}{\numberline {1.1}{\ignorespaces Flowchart of LC-MS data analysis.\relax }}{3}
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Box Plot Diagram to identify outliers \relax }}{7}
+\contentsline {figure}{\numberline {2.2}{\ignorespaces 5 \% critical values for Kimber's test for finding up to r upper outliers from an exponential distribution \relax }}{10}
+\contentsline {figure}{\numberline {2.3}{\ignorespaces MVE example\relax }}{11}
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Work flow of the proposed MSN method\relax }}{16}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Example of ratio table extraction\relax }}{17}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Illustration of the iterative process of learning normalization weights and data normalization\relax }}{19}
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Examples of detected outliers in compounds with noise added to their samples in class $C2$\relax }}{22}
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Comparison of the performance of the proposed MSN method to 5 normalization methods when groups G0 and G5 are considered and as we vary the noise level on one sample in G0 in Liver Extraction Data.\relax }}{25}
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Comparison of the performance of the proposed MSN method to 5 normalization methods when groups G0 and G5 are considered and as we vary the noise level on two samples in G0 in Liver Extraction Data.\relax }}{25}
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Comparison of the performance of the proposed MSN methods to 5 normalization methods when groups G0 and G3 are considered and as we vary the noise level on two samples in G0 in the Liver Extraction Data.\relax }}{26}
+\contentsline {figure}{\numberline {5.4}{\ignorespaces Learned normalization factors, as a function of the m/z values, for the potential house-keeping metabolites of sample 3 in $G0$ before and after adding $20\%$ noise in Liver Extraction Data.\relax }}{27}
+\contentsline {figure}{\numberline {5.5}{\ignorespaces Learned normalization factors, as a function of the retention time, for the potential house-keeping metabolites of sample 3 in $G0$ before and after adding $20\%$ noise in Liver Extraction Data.\relax }}{27}
+\contentsline {figure}{\numberline {5.6}{\ignorespaces Comparison of the performance of the proposed MSN methods to 5 normalization methods as we vary the noise level and the samples affected by noise in G0 and G7 in the Human Urine Data.\relax }}{28}
+\contentsline {figure}{\numberline {5.7}{\ignorespaces Comparison of the performance of the proposed MSN methods to 5 normalization methods as we vary the noise level and the samples affected by noise in G3 and G6 in the Human Urine Data.\relax }}{28}

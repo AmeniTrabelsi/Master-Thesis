@@ -1,0 +1,24 @@
+\chapter{Conclusions and Proposed Future Work}
+\section{Conclusions}
+In this proposal, we developed a hyperspectral unmixing algorithm, called Context Dependent Spectral Unmixing (CDSU), that finds multiple sets of endmembers. Unlike existing hyperspectral unmixing methods, CDSU is a local approach that adapts the unmixing to different regions of the spectral space. It comes from the need for an unmixing algorithm that finds multiple sets of endmembers that represent semantically meaningful regions of the hyperspectral image.
+
+ The algorithm is based on a novel objective function that combines context identification and hyperspectral unmixing into a joint function. This objective function models contexts as compact clusters and uses the linear mixing model as the basis for unmixing. The unmixing provides optimal endmembers and abundances for each context.
+
+ An alternating optimization algorithm is derived and its performance is evaluated and compared to similar existing methods using synthetic and real data. We showed that the proposed method can identify meaningful and coherent contexts, and appropriate endmembers within each context.
+ \section{Proposed Future Work}
+ Although our approach has shown promising results, there is still room for improvement. The following sections list the various areas that will be explored in the future to build upon the previous work.
+ \subsection{Clustering}
+ The current CDSU algorithm uses the FCM \cite{69} clustering term in its objective function. As a result, we are restricted to spherical clusters. This may not be the best way to cluster high dimensional and possibly non-gaussian data. As future work, we suggest investigating other alternatives such as covariance matrix induced metrics \cite{77}, kernel clustering [], or even integrating different distributions.
+ \\Also, inspiring from the work in \cite{49,50,51,71}, other variations of the proposed CDSU algorithm can be derived. For instance, taking into account spatial information while identifying contexts can be investigated. Furthermore, more robust methods, such as possibilistic clustering \cite{74}, can be used to partition the data. 
+ \\The performance of the current CDSU algorithm depends on the decided number of clusters. The optimal number of clusters could be automated using a competitive agglomeration approach \cite{73}. We are actually investigating changing (\ref{ObjFunc1}) to integrate a validity measure for clusters as follow:
+ \begin{eqnarray}\label{ObjFunc1CA}
+    &J=\sum_{i=1}^{C}\sum_{j=1}^{N}u_{ij}^{m}(\mathbf{x}_{j}-\mathbf{c}_{i})(\mathbf{x}_{j}-\mathbf{c}_{i})^{T}&\nonumber\\
+    &+\alpha\sum_{i=1}^{C}\left[\sum_{j=1}^{N}u_{ij}^{m}(\mathbf{x}_{j}-\mathbf{p}_{ij}\mathbf{E}_{i})(\mathbf{x}_{j}-\mathbf{p}_{ij}\mathbf{E}_{i})^{T}\right.&\nonumber\\
+    &+\beta_{i}(M trace(\mathbf{E}_{i}\mathbf{E}_{i}^{T})-\mathbf{1}_{1\times M}\mathbf{E}_{i}\mathbf{E}_{i}^{T}\mathbf{1}_{M\times 1})\Big]&\nonumber\\
+    &-\gamma\sum_{i=1}^{C}\left(\sum_{j=1}^{N}u_{ij}\right)^{2}.
+\end{eqnarray}
+The last component in (\ref{ObjFunc1CA}) is the sum of squares of the cardinalities (sum of the memberships) of the clusters which allows us to control the number of clusters. The global minimum of this term (including the negative sign) is achieved when all points are lumped in one cluster, and all other clusters are empty. When all components are combined and $\gamma$ is chosen properly, the final partition will minimize the sum of intra-cluster distances, while partitioning the data set into the smallest possible number of clusters. The clusters which are depleted as the algorithm proceeds will be discarded.
+\subsection{Dimensionality reduction}
+Since hyperspectral data is high dimensional, dimensionality reduction techniques, such as PCA and other band selection techniques are to be used.
+\subsection{Parameter values}
+The performance of the CDSU algorithm depends on the values of the parameters $\alpha$ and $\boldsymbol\beta$. A small value of $\alpha$ would neglect the unmixing term and the data is clustered based mainly on the distances in the spectral space. On the other hand, a large value of $\alpha$ would emphasize the unmixing term and would result in non-coherent clusters. Similarly, a small value of $\boldsymbol\beta$ would result in endmembers that do not provide a tight fit around the data. On the other hand, a large value of $\boldsymbol\beta$ would result in a trivial solution where all endmembers converge to one point, the mean of the data. The values of $\alpha$ and $\boldsymbol\beta$ could be automated by making sure that the terms in the objective function are balanced in every iteration. We will investigate methods to optimize and automate the choice of these parameters.

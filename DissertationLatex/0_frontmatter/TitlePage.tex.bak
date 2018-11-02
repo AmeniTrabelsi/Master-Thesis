@@ -1,0 +1,9 @@
+\renewcommand{\thesisauthor}{Hamdi Jenzri}
+\renewcommand{\thesismonth}{January}
+\renewcommand{\thesisyear}{2013}
+\renewcommand{\thesisabstractdate}{January 9, 2013}
+\renewcommand{\thesistitle}{Context Dependent Spectral Unmixing}
+\renewcommand{\thesisauthorpreviousdegrees}
+{B.E., Telecommunications Engineering, Higher School of Communications of Tunis, 2009}
+\renewcommand{\thesisauthoraddress}{Department of Computer Engineering and Computer Science \\
+   University of Louisville, \\Louisville, KY}

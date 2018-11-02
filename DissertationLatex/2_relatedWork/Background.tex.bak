@@ -1,0 +1,258 @@
+\chapter{LITERATURE REVIEW}
+This chapter will depict some aspects of this work's background. The key concepts will be described in details.
+\section{Application 1:Band-Gap engineering}
+\indent Solar energy provides around 2\% of the world\textsc{\char13}s total energy \cite{26}. But it has the potential to provide much more than that if the true challenges behind its industry are well addressed. Overcoming the barriers to boost solar power generation requires several engineering innovations in different fields starting from capturing solar energy and converting it to useful forms, ending by storing it for later use.\\
+\indent The main challenge here, is therefore to design powerful, cost-efficient solar cells most often made of semi-conductors like silicon. Given their manufacturing costs, modules of today\textsc{\char13}s solar cells incorporated in the power grid would produce electricity at a cost roughly 2 to 6 times higher than current electricity prices \cite{20}.\\
+\indent A key step to designing new solar material is that of predicting the electronic properties of the prospect compound before manufacturing it.\\
+\indent An important property of any new solar material is its band gap.  Heuristically, the band gap of a material can be defined as the amount of energy needed to change the conductive properties of a semiconductive material. Based on the photovoltaic effect, solar cells convert the absorbed light into electricity. Their basic principle can be easily understood by considering P-N junctions - based solar cells. Two types of materials are put next to each other, one has abundance of free negative charge carriers ( electrons), called n-type material,  and the other one has many free positive charges (holes), called p-type material. Upon absorption of an incident radiation, electrons from the p-type layer are excited, jump across the barrier into the upper n-type layer and then escape out into the circuit \cite{28}. Efficiency is the most important characteristic of solar cells. It is calculated as the ratio of the created electricity by the absorbed light (Equation \ref{eff2}). \\
+\indent There is a very important trade-off that should be made in order to guarantee an acceptable efficiency. In fact, a good efficiency is tightly coupled to the properties of the used materials, especially the band gap \cite{30}. And this is why band gap engineering is a key process within the manufacturing cycle.
+
+\begin{figure}[h!]
+\centering
+\includegraphics[width=0.8\linewidth, height=0.75\linewidth]{bandGap.png}%[width=0.67\linewidth, height=0.65\linewidth]
+\caption[Solar spectrum and semiconductors band gap]{Solar spectrum and semiconductors band gap.\footnotemark}
+\label{bgEngineering}
+\end{figure}
+\footnotetext{Image adapted from  \cite{29}.}
+ Figure \ref{bgEngineering} shows the solar energy intensity on the Earth surface versus the radiations' wavelength. The band gap energy of the solar cell material should be chosen as low as possible (higher wavelength) in order to ensure more absorption of light with higher energy, which will excite more electrons and thus more current will be generated. At the same time, the band energy should be kept as high as possible  to retain a high enough output voltage. In fact, the output voltage is directly related to the band-gap of the cell, and even with very high current, if the output voltage is low, then the output power will be too low which will drastically deteriorate the cell efficiency (Equations \ref{eff1} and  \ref{eff2}). Theoretical calculations have shown that the efficiency for a single band gap semiconductor, is maximum (around 33\% ) at a band gap $~1.5 eV$ for standard conditions \cite{29,28}.
+\begin{equation}\label{eff1}
+    \mathbf{Power}(W)=\mathbf{Voltage}(V)*\mathbf{Current}(I),
+\end{equation} 
+\begin{equation}\label{eff2}
+    \mathbf{Efficiency}=\frac{\mathbf{Voltage} * \mathbf{Current}}{\mathbf{Incident Energy}},
+\end{equation} 
+
+\\ \indent Satisfying the various constraints and defining the optimal range of band gap is still a very challenging task to perform. Yet, even for a given band gap range, finding the adequate materials is much more strenuous. To perform this task, scientists relied  most on $ab initio$ techniques. Standard Density Functional Theory (DFT) methods, for instance, were the workhorse of computational materials science for a good while. They provided acceptable results. However, they are still computationally expensive which justifies the limited set of compounds that has been studied till now.\\
+\indent Materials scientists have been considering chemo-informatic alternatives to estimate band gaps for years. The work of Zeng et al. (2001) \cite{zeng} and that of Suh and Rajan (2004) \cite{32} and the extensions that were based on it (2014) \cite{19} have laid the basic framework for our investigation. They attempted to estimate the band gap of 28 known chalcopyrite compounds through the implementation of different regression techniques. They used five elementary descriptors for each atom present in the studied ternary compounds ($ABC_2$ formula, where $A$, $B$, and $C$ are three atoms.); The atomic number(AN), the electronegativity (EN), the valency (VL), the melting point (MP) and the pseudo-potential radii (PR). Therefore, the band-gap (BG) of the compound ABC2 was predicted as a function of MP(X), AN(X), EN(X), VL(X), PR(X) with $X 	\epsilon \{ A,B,C \}$.
+This work will focus on this choice of features. It aims, mainly, to determine if all of the previously chosen descriptors are relevant and have meaningful contribution to the prediction process while investigating the possibility of adding new ones.
+\section{Application 2: Dilute Magnetic Semiconductors }
+Spintronics (Spin-based electronics) research aims to investigate new applications and functionalities to microelectronic devices by engineering the carrier's spin, instead of or in addition to its charge. Metal-based spintronic devices have been widely studied and integrated in circuits. Expanding these studies to semiconductor devices can open wider horizons into achieving the full potential of spintronics. This is why the new trends in the field are focusing in developing magnetic semiconductors, Dilute Magnetic Semiconductors for instance \cite{40}.
+  \begin{figure}[h!]
+\centering
+\includegraphics[width=0.9\linewidth, height=0.25\linewidth]{dms.png}%[width=0.67\linewidth, height=0.65\linewidth]
+\caption[Semiconductor host doped with magnetic ions.]{Semiconductor host doped with magnetic ions.}
+\label{dms}
+\end{figure}
+\\
+\indent Dilute magnetic semiconductors (DMS) are a subclass of magnetic semiconductors where a fraction of the cations in the lattice are substituted by magnetic ions. They are typically constracted as alloys between a nonmagnetic semiconductor (host) and a magnetic element deriving from the doping compound. Figure (\ref{dms}) illustrates the typical structure of a DMS material \cite{40}. The exchange interaction between the spin of the dopant atoms and the carriers in the semiconductor host can alter the global ferromagnetic properties yielding an extremely interesting characteristic.
+
+\\ \indent Understanding the origins of magnetism in these materials is still a very challenging task, it was subject to various studies starting from the 1980s \cite{41}.  Several mechanisms have been suggested that describe the origin of magnetism in DMS like Mean Field Theory \cite{42} and Bound Magnetic Polaron\cite{43}.  Most theories attempt to identify the various spin coupling energetic concurrent in a system, and by plugging it in the material parameters, attempt to estimate if the energetics lead to ferromagnetic, antiferromagnetic or spin-glass like interactions between individual atomic spins. Even though the exact underlying process is not yet modeled, the idea of electrically tuning DMS magnetism remains a fascinating prospect. This can create many revolutionary functionalities\cite{41}.\\
+ \indent Semiconductors, unlike ordinary metals, offer the interesting opportunity that their properties can be tailored to fit the target applications. Spintronics is centered around three main process; injection, manipulation and detection of the carrier's spin.\cite{39}  
+ 
+\section{Informatics-aided materials science}
+Materials informatics is an emerging field that aims to accelerate the development cycle through high speed and robust acquisition, management, analysis, and dissemination of diverse materials data. This field of studies includes the research, development, and application of information about materials properties (including both physical data, theoretical and empirical models) and the software tools for querying and mining those databases.\\
+\subsection{Machine learning for knowledge discovery in materials science}
+ Machine learning schemes have already impacted multiple areas such as cognitive game theory, pattern recognition, event forecasting, and bioinformatics. They are beginning to make major inroads within materials science and hold considerable promise for materials research and discovery\cite{12}. Some examples of successful applications of machine learning within materials research in the recent past include accelerated and accurate predictions of phase diagrams \cite{33}, crystal structures \cite{34,35} and materials properties \cite{36,37}.
+  \begin{figure}[h!]
+\centering
+\includegraphics[width=0.67\linewidth, height=0.45\linewidth]{perspectiveML.png}%[width=0.67\linewidth, height=0.65\linewidth]
+\caption[Role of machine learning in accelerating quantum mechanical computations.]{Role of machine learning in accelerating quantum mechanical computations.\footnotemark}
+\label{perspectiveML}
+\end{figure}
+ \begin{figure}[h!]
+\centering
+\includegraphics[width=0.8\linewidth, height=0.45\linewidth]{Combinatorial.png}%[width=0.67\linewidth, height=0.65\linewidth]
+\caption[Concepts of combinatorial materials-development]{Concepts of the combinatorial materials-development.\footnotemark[2]}
+\label{Combinatorial}
+\end{figure}
+
+\footnotetext[1]{Image adapted from \cite{12}.}
+\footnotetext[2]{Image adapted from \cite{8}.}
+\\
+
+ \indent As already highlighted, the process of designing new materials can profit enormously  from the available machine learning techniques. A given property could be predicted  using past knowledge from other similar known materials. Data scarcity is a common issue when it comes to this kind of application.\\
+ \indent Researchers typically resort to performing parallel computations to provide the necessary inputs needed to train a robust model. Even if this might seem contradictory, the amount of computations to be performed when integrated with a machine learning process will be noticeably  reduced. The additional computations will focus mainly on balancing the training data set in order to build a model that can be easily generalized afterward. Figure \ref{perspectiveML} highlights this new perspective. Machine learning applications in materials science, help not only avoiding superfluous time-consuming computations, but also in accelerating the pace of new discoveries. \\
+\indent A new scheme of combinatorial materials development cycle has recently emergerged as illustrated in Figure \ref{Combinatorial} \cite{38}. Informatics-aided modeling has become a core feature to extend the existing known materials library. Combinatorial high throughput work-flow combines both  human input and automated modeling to respond to the compelling market's needs.
+\subsection{Materials Genome Initiative (MGI)}
+\indent Several computational materials science projects have been carried in the last decades. Informatics researchers have created frameworks to acquire and store data, fuse complex and disparate data, and add theoretical and computational models. Digital libraries of materials property information and existing computational tools for predicting material properties are important resources in informatics; their development has laid much technical groundwork for informatics approaches. The structured environment developed from measurement or computation is no longer simply a single data point; it is a step in an information-based learning process that uses the collective power to achieve greater efficiency in new materials exploration.\\
+\indent  Applying data mining techniques for knowledge discovery in materials science is, however, still at its beginning. Data acquisition and preprocessing were the main concerns till the last few years. This has resulted in the development of good cyberinfrastructures such as the National Science Digital Library Materials Digital Library (NSDL-MatDL) which contains both digital and human resources in a collaborative platform for shared results and data dissemination. \cite{24} \\
+\indent Since the launch of the Materials Genome Initiative (MGI) by the US government, those works have witnessed a relatively huge expansion \cite{11,10}. The main focus was on establishing the basic frameworks for this field including collaborative databases and toolboxes. The Lawrence Berkeley National Laboratory (LBNL) has been one of the main lead performers of this initiative. They have introduced the \textit{The Materials Project}, a core program of the Materials Genome Initiative that uses high-throughput computing to uncover the properties of all known inorganic materials \cite{b1}. They aim to remove guesswork from materials design in a variety of applications and to accelerate innovation in materials research and in cleantech \cite{10,b1}. Their work has been focusing on automating quantum mechanical characterization of known and new materials and their properties. They combined this so-called high-throughput computing with existing data mining approaches for the discovery of new materials for Li-ion batteries, photocatalysts, thermoelectrics, piezoelectrics, and other functional materials.\\
+\indent Several other national laboratories ( e.g., the National Renewable Energy Laboratory (NREL), Sandia National Laboratories (Sandia Labs), the SLAC National Laboratory (SLAC), etc.,)  have been carrying similar investigations. A collaborative framework is being established and actively engaged in both the development of data mining and high-throughput methodologies and the application of these techniques to a range of physical problems and materials discovery \cite{11,10}.\\
+\indent  Most of the previous projects focused mainly on computational thermodynamics and on modeling key materials properties for different applications. Even though several investigations were focusing on solar enrgy applications, they usually tackeled specific compounds \cite{bg11, bg12, bg13}. Not enough studies were carried for a large scale discovery of new chalchopyrites which explains the few amount of available data for our first application.  
+\section{Relevant machine learning algorithms}
+\subsection{Feature selection}
+Feature selection is the process of identifying and eliminating the maximum subset of irrelevant and redundant features. This helps reducing the dimensionality of the data and improving the performance and generalization of regression algorithms. \\
+\indent Several factors are involved in the success of a machine learning task. One of the most important factors and commonly ignored is the representation of the data as well as the quality of its instances \cite{8}. The presence of noise or unreliable information makes learning a very challenging task and can induce a huge drop in efficiency. Real-world data is often represented using too many features. Yet, only a few of them may be related to the target concept. Moreover, there might be redundancy, where some features are correlated so that is not necessary to include all of them in modeling. \\
+\indent In general, feature selection algorithms have two components: a selection algorithm that generates the candidate subsets of features and attempts to find the optimal one among them; and an evaluation algorithm that determines how good a candidate feature subset is by returning some measure of goodness to the selection algorithm. A stopping criterion should be set to avoid exhaustive search through the space of subsets. This could be: when addition (or deletion) of any feature does not produce a better subset; or when an optimal subset, according to some evaluation function, is obtained. Different strategies have been proposed over the last years for feature selection. These include filter, wrapper, embedded \cite{45}, and more recently ensemble techniques \cite{10p}.
+\subsubsection{Filter-based feature selection techniques}
+These techniques are independent of the algorithm that will use the selected subset at the end. They assess the discriminative power of features based only on the intrinsic properties of the data. In general, a relevance score is used herein to estimate the optimal subset based on a predefined threshold. Most filter methods consider the problem of FS as a ranking problem. The solution is provided by selecting the top scoring features while the rest are discarded\cite{11_p}. \\
+\indent Let $ [X,Y]=\{(x_{ij},y_i), i=1..N$ and $j=1..d\}$ be the input data; a matrix $X$ of $N$ rows, corresponding to the number of observations and $d$ columns which represent the used features. $Y=\{y_i, i=1..N\}$ is the output variable, where $y_i \in \{1..k\}$ is the label associated with $i^{th}$ observation, $k$ being the number of classes. Let $X_j=\{x_{ij}, i=1..N\} \in \mathbf{R}^d$ be the $j^{th}$ feature of the given data. \\ In the following subsections, we outline commonly used ranking methods.
+\\
+ \textbf{Correlation criteria} \\
+\indent This method consists of using the Pearson correlation coefficient  \cite{19p} \cite{18p} defined as:\\
+\begin{equation}
+R(j)=\frac{cov(X_j,Y)}{\sqrt{var(X_j)*var(Y)}} 
+\end{equation}
+for $j \in \{1..d\}$ \\
+The correlation ranking helps detecting the linear dependencies between each feature and the
+target variable $Y$.\\
+ \textbf{Mutual information criteria:}\\
+\indent The information theoretic ranking criteria uses the measure of dependency between two variables \cite{19,18p,19p,20p,21p}.
+The mutual information measure ($I$) of two random variables is a measure of the mutual dependency between the two variables. 
+It is derived from Shannon formulas of the entropy and the conditional entropy as given by the following expression:
+\begin{equation}
+I(Y,X)=H(Y)-H(Y|X)
+\end{equation}
+where $H(Y)$ is the entropy of the variable $Y$ given by:
+\begin{equation}
+H(Y)=-\sum_{y}^{} p(y)log(p(y))
+\end{equation}
+$H(Y)$ represents the information content, more specifically the uncertainty, in the output variable
+$Y$. In (2.4), $H(Y|X)$ is the conditional entropy which represent the entropy of the variable $Y$ given the known observations of a variable $X$, i.e.,
+\begin{equation}
+H(Y|X)=-\sum_{x}^{} \sum_{y}^{} p(x,y)log(p(y|x))
+\end{equation}
+
+Introducing the information about the observed values of X into the entropy of the output Y
+reduces the amount of uncertainty which gives the mutual information between X and Y and it can be interpreted as
+follows:
+ \[
+    \left\{ 
+                \begin{array}{ll}
+                  I=0$ if $X$ and $Y$ are independent \\
+      			$I $ > $0$ if $X$ and $Y$ are dependent
+                $\end{array}
+              \right.
+  \]
+For continuous variables the same formulas are applied while replacing summations with
+integrations.\\
+\indent For mutual information based feature selection methods, $I$ is computed between each features and the
+target variable. After sorting the obtained values, the top $d$ features will be selected, where $d<D$ is
+a threshold to be selected independently. The fact that the inter-feature mutual information is not taken into account
+for this method may give poor prediction results \cite{20p}.
+\subsubsection{Wrapper techniques}
+These methods rely on the performance of the inductive algorithm as the selection criterion.\\
+Wrapper methods wrap the feature selection around the learning algorithm to be used, using cross
+validation to predict the benefits of adding or removing a feature from the used feature subset.\\
+\indent Wrapper selection algorithms aim, therefore, to evaluate the different possible subsets of
+features on the learning algorithm and keep those that perform the best.
+Wrapper techniques are broadly classified into Sequential selection algorithms and Heuristic
+search algorithms as outlined below.
+\\
+\textbf{Sequential Selection Algorithms}\\ 
+\indent This category of algorithms starts with a set and adds (or removes) iteratively new features until
+the required number of features is obtained or the required performance is reached.
+Different sub-categories can be defined depending on the way the required subset of features
+is constructed.\\
+\indent Sequential Forward Selection (SFS) is the simplest method. It starts with an empty set and 
+greedily adds attributes one at a time. At each of the remaining steps, FS adds, permanently, the attribute
+that yields the learned structure that generalizes best when added\cite{12p,14p}. \\
+This process can be considered,
+a naive sequential feature selection algorithm since it doesn't take into account the dependency
+between the features. However, it can determine small effective subsets quite rapidly since the first
+evaluations involving relatively few variables are fast.\\
+Sequential Backward Selection (SBS), is similar to SFS. The only difference is that it starts
+from the complete set of features, on each pass it removes one feature whose removal results in the lowest decrease
+in the predictor's performance, until the stopping criterion is satisfied. In SBS inter-dependencies
+are well handled, but early evaluations are relatively expensive \cite{22p}.\\
+There is also Sequential Forward Floating Selection (SFFS) and Sequential Backward Floating
+Selection (SBFS) which are more flexible than naive sequential feature selection previously
+described since they introduce an additional backtracking step. They are characterized by the
+changing number of features included or eliminated at different stages of the procedure \cite{23p}.\\
+The main problem with sequential forward selection approaches is that they can produce nested
+subsets since the forward inclusion is usually unconditional which means that two highly
+correlated variables might be included if they give the highest performance in the SFS evaluation
+\cite{24} . \\ To avoid this nesting effect, an adaptive version of the SFFS was proposed \cite{24p}; The
+Adaptive Sequential Forward Floating Selection (ASFFS) algorithm uses a parameter to
+specify the number of features to be added in the inclusion phase. This parameter needs to be calculated
+adaptively. The ASFFS also uses another parameter to remove the maximum number of features
+that increase the performance during the exclusion phase.\\ The ASFFS can therefore obtain a less
+redundant subset than the other algorithms depending on the objective function and the distribution
+of the data \cite{24,24p}. 
+\\
+ \textbf{Heuristic Search Algorithms}\\ 
+\indent This method consists of evaluating different feature subsets that can be generated either as a
+solution for an optimization problem or by searching around in a search space using an adequate
+configuration \cite{45,14p,12p}. Generally, this category of algorithms starts the search from a random subset. In
+this case, a solution is typically a fixed length binary string representing a feature subset, the value
+of each position in the string indicates the presence or absence of a particular feature. It is is an
+iterative process where each new generation is the result of applying genetic operators like
+crossover and mutation to the members of the current generation\cite{14p,12p}.
+\end{enumerate}
+\subsubsection{Embedded techniques}
+ Embedded techniques interact with the learning algorithm in a different way. They
+include variable selection as part of the training process without splitting the data into training and
+testing sets \cite{24p,23p,19p}. Their main advantage is that they are computationally more efficient than
+wrapper techniques.
+\subsubsection{Ensemble methods}
+This approach was proposed to cope with the instability of feature selection methods caused by
+perturbations that can occur in the training set. They consist of fusing the subsets obtained by
+applying different features selection method to the input data based on a consensus function\cite{44,10p,19p,18p}.
+\subsection{Regression analysis}
+Regression analysis is a statistical process for estimating the relationships between a
+dependent variable and a set of independent features also called “predictors”. 
+A regression model involves three main variables: The unknown parameters, denoted as $\beta$ ,
+which can be a scalar or a vector, the independent variables that can be represented by a matrix $X$
+containing the set of descriptors and finally the dependent variable $Y$.\\
+The model relates $Y$ to $X$ and $\beta$ as $Y=f(X, \beta)$. This approximation is usually formalized as
+$E (Y|X) = f(X, \beta)$, where $E (Y|X)$ is the expected value of $Y$ given $X$.\\
+\indent Depending on the used regression technique, the unknown parameter, estimated by $\hat{\beta}$ is obtained by either a closed form expression, by solving an estimating equation, or by optimizing an objective function often subject to certain constraints \cite{45} .\\
+Heuristically, $\beta$ and $\hat{\beta}$   can be thought
+of as the true coefficients which explain the physical relation between the descriptors and the target
+output and afterward, a regression model is generated.\\
+\indent A good regression model $f(X,\hat{\beta})$ is not only characterized by its ability to fit the training
+set, but also by how accurately it can predict a future response given a new unlabeled test data\cite{22p}.\\
+\indent Cross validation is often used as a reliable mean to judge the robustness of the predicted regression models.\\
+\indent Let $Y=\{y_1, y_2,...,y_N\}$ be the $N$ dependent variable, $X= \{(x_{ij}), i=1..N$ and $j=1..p$\} be the N p-dimensional feature vectors, and the model's parameter coefficients  $ \beta =\{\beta_1 , \beta_2...\beta_p$\}. $\beta$ can be estimated by different ways depending on the used regression technique.
+Following are the most commonly used methods.
+\subsubsection{Ordinary Least Square Regression (OLS)}\label{OrLS}
+OLS, also known as linear least square, is one of the simplest form of regression. Under appropriate assumptions, OLS regression consists of minimizing the sum of the squares of the differences between the target values and the predicted values by a candidate linear function.
+The estimates of the parameters of an OLS model are obtained as the solution to the
+following optimization problem \cite{16p,17p}.
+\begin{equation}
+\hat{\beta}^{OLS}=argmin_{\beta}{\sum_{i=1}^{N} (y_i-\sum_{j=1}^{p} \beta_j x_{ij})}
+\end{equation}\\
+It can be shown that $\hat{\beta}^{OLS}$ is given by the closed form solution \cite{10p}:
+\begin{equation}
+\hat{\beta}^{OLS}=(X^TX)^{-1}X^TY
+\end{equation}
+This can be easily explained by uni-dimensional variables. OLS aims to estimate the parameters of the linear model that best relates the input variables $x_i$ to the corresponding observed responses $y_i$ for $i=1..N$. This is done by minimizing the resulting least square errors $|\epsilon_i|$ as illustrated in Figure (\ref{ols}) \cite{16p}.   
+ \begin{figure}[h!]
+\centering
+\includegraphics[width=0.5\linewidth, height=0.35\linewidth]{ols.png}%[width=0.67\linewidth, height=0.65\linewidth]
+\caption[OLS regression - Geometrical interpretation for 1-dimensional data]{OLS regression - Geometrical interpretation for 1-dimensional data. }
+\label{ols}
+\end{figure}
+\subsubsection{Least Absolute Shrinkage and Selection Operator (LASSO)}
+LASSO \cite{16p,17p} performs both variable selection and regularization in order to enhance the prediction accuracy and
+interpretability of the statistical model it produces. LASSO models are carried by imposing an $L_1$ constraint on the sum of the $\beta$ coefficients as given by the following formula:\\
+\begin{equation}
+\hat{\beta}^{LASSO}=argmin_{\beta}{\sum_{i=1}^{N} (y_i-\sum_{j=1}^{p} \beta_j x_{ij})^2}\hfill
+\label{lss}
+\end{equation}
+\begin{center}
+Subject to $|\beta|_1<t$
+\end{center}
+The solution to (\ref{lss})  can be expressed as a penalized least squares optimization \cite{17p}:
+\begin{equation}
+\hat{\beta}^{LASSO}=argmin_{\beta}(Y-X^t\beta)^T(Y-X^t\beta)+\lambda_1|\beta|_1
+\label{lssSol}
+\end{equation}
+In (\ref{lssSol}), $\lambda_1$ is a tuning parameter which controls the amount of shrinkage.\\
+\indent LASSO performs $L_1$ shrinkage, so that there are "corners" in the constraint region. For a 2-dimensional case, as illustrated in Figure (\ref{lasso})\cite{26p}, this region can be assimilated to a diamond-like area corresponding to $|\beta_1|+|\beta_2|<t$. 
+If the sum of squares (i.e. the red ellipses) "hits" one of these corners, then the coefficient corresponding to the axis is shrunk to zero \cite{26p}.
+ \begin{figure}[h!]
+\centering
+\includegraphics[width=0.45\linewidth, height=0.35\linewidth]{lasso.png}%[width=0.67\linewidth, height=0.65\linewidth]
+\caption[Lasso regression - Geometrical interpretation for 2-dimensional data]{Lasso regression - Geometrical interpretation for 2-dimensional data }
+\label{lasso}
+\end{figure}
+\subsubsection{Partial Least Square Regression (PLS)}
+PLS regression takes into account the latent structure in both, the set of features and the response variable. It uses predictors derived as linear combinations of the original features in order to predict the response. The latent structure is obtained by maximizing the covariance between the derived descriptors and responses\cite{16p,17p}. It is recommended mainly when the number of variables is high, and when it is more likely that the explanatory variables are correlated.\\
+\indent PLS generates a linear model. It is based on the same mathematical foundations as OLS regression (Section (\ref{OrLS})). However, PLS considers the input data structure differently.  Both the predictors, $X$ matrix, and the target variables, $Y$ matrix, are decomposed into latent structures in an iterative way. The latent structure that corresponds to the most variation of $Y$ is extracted and explained by a latent structure of $X$ that explains it the best.\\
+\indent Figure (\ref{pls}) illustrates this process for 3-dimensional input data sets. $u_1$ represents the direction of most variation for the target, $Y$. $t_1$ is the direction that explains $u_1$ the best within the set of observations $X$. It is not necessary that $t_1$ explains the most variation in $X$ as well. The regression problem is reduced therfore to estimate the linear model that best relates $u_1$ to $t_1$ using ordinary least squares \cite{27p}.
+
+ \begin{figure}[h!]
+\centering
+\includegraphics[width=0.95\linewidth, height=0.25\linewidth]{pls.png}%[width=0.67\linewidth, height=0.65\linewidth]
+\caption[PLS regression - Geometrical interpretation for 3-dimensional data]{PLS regression - Geometrical interpretation for 3-dimensional data.\footnotemark}
+\label{pls}
+\end{figure}
+\footnotetext{Image adapted from \cite{27p}}
+\subsubsection{Cross-validation}
+Cross validation is usually used as a convenient technique to assess the performence of a learning algorithm including regression methods. Cross validation is very important to assess the generalization ability of the statistical analysis results to independent data sets \cite{16p}. \\
+Different cross-validation approaches can be used according to the available data.\\
+\indent The holdout method is the most common cross validation. The data set is split into two sets, a training and a testing sets. The predictor model is built based on the training set only. Then it is tested on the new observations of the testing set. The generated errors  are accumulated to give the mean absolute test set error, which is used to evaluate the model's performance. This method could be advantageous since it is fast to perform. However, its evaluation can have a high variance, especially when the used sets are not well balanced \cite{44}. \\
+\indent  K-fold cross validation is one possible way to improve over the holdout method \cite{44}. The data set is split into k subsets, and the holdout method is repeated k times. In each iteration of the learning process, one of the k subsets is used as the test set and the other k-1 subsets are combined to form the training set. Afterward, the average error across all k trials is calculated. This method gives a model that is more adapted to the inherent data distribution since the learning takes into account all instances within the data which reduces the variance of the resulting estimate. The variance of the resulting estimate is reduced as k is increased.  Nevertheless, this method is still more computationally expensive compared to the previous method. The training algorithm has to be rerun from the beginning k times, which means it takes k times as much computation to make a single evaluation \cite{44}. \\
+\indent Leave One Out (LOO) cross validation is a k-fold cross validation taken to its logical extreme, with k equal to N, the number of observations \cite{44}. In each observation, an observation is removed from the trained set, the model is fitted for the incomplete set, and then an error estimate is computed for the removed instance. The same process is repeated until an error estimate has been obtained for all the instances within the data. Mean Squared Cross Validated Error (MSCVE) is then obtained as the mean of the squared errors \cite{44}. LOO cross-validation is typically used when $N$ is small to maximize the number of training samples. This is almost the case for our applications \cite{44}. \\
+\indent For our analysis, (MSCVE) will be used for most cases as the performance measure for comparison between different models.
