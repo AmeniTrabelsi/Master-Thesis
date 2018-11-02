@@ -1,7 +1,7 @@
 # Master-Thesis
 Master's Thesis Report at University of Louisville
 
-### The code is available [here](https://github.com/AmeniTrabelsi/Molecule-Specific-Normalization/) 
+### The code of Molecule Specific Normlization Algorithm is available [here](https://github.com/AmeniTrabelsi/Molecule-Specific-Normalization/) 
 
 ## Keywords:
 Normalization, Robust Surface Fitting, Machine Learning, Loess Regression, Biomarker Discovery.
@@ -25,5 +25,7 @@ points from the experimental data. The applications of the MSN method on two dif
 showed that MSN is a highly efficient normalization algorithm that yields the highest sensitivity
 and accuracy compared to five existing normalization algorithms. The outlier detection algorithm's
 application on the same datasets has also shown to be efficient and robust.
+
+[https://github.com/AmeniTrabelsi/Master-Thesis/tree/master/DissertationLatex/flow_data_process.JPG/]
 
 
