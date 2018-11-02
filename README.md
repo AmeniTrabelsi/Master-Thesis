@@ -26,6 +26,7 @@ showed that MSN is a highly efficient normalization algorithm that yields the hi
 and accuracy compared to five existing normalization algorithms. The outlier detection algorithm's
 application on the same datasets has also shown to be efficient and robust.
 
-(https://github.com/AmeniTrabelsi/Master-Thesis/tree/master/DissertationLatex/flow_data_process.JPG/)
+The Flow chart for the complete data preprocessing:
+![pipeline](https://github.com/AmeniTrabelsi/Master-Thesis/tree/master/DissertationLatex/flow_data_process.JPG/)
 
 
