@@ -27,6 +27,6 @@ and accuracy compared to five existing normalization algorithms. The outlier det
 application on the same datasets has also shown to be efficient and robust.
 
 The Flow chart for the complete data preprocessing:
-![pipeline](https://github.com/AmeniTrabelsi/Master-Thesis/tree/master/DissertationLatex/flow_data_process.JPG/)
+![pipeline](https://github.com/AmeniTrabelsi/Master-Thesis/blob/master/DissertationLatex/flow_data_process.JPG)
 
 
